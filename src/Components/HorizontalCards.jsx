@@ -28,7 +28,7 @@ export const HorizontalCards = ( {data ,setfilter}) => {
     <div className='w-full h-[40vh] relative '>
       <div className='flex justify-between items-center py-0 px-7'>
       <h1 className='px-4 py-[20px] text-2xl font-semibold text-zinc-400'>Trending</h1>
-      <Dropdown title="Filter" options={["tv","movie","all"]} onclick={setfilter} />
+      <Dropdown title="Filte" options={["tv","movie","all"]} onclick={setfilter} />
       </div>
       <i onClick={sliding} className="ri-arrow-right-line text-white font-bold text-center w-11 h-11 absolute right-8 bottom-[55px] bg-black py-2 pt-[7px] text-[20px] rounded-full cursor-pointer"></i>
      {scrollReset ? <i onClick={resetScroll} className="ri-arrow-left-line text-white font-bold text-center w-11 h-11 absolute left-8 bottom-[55px] bg-black py-2 pt-[7px] text-[20px] rounded-full cursor-pointer"></i> : null}
