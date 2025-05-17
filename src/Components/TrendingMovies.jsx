@@ -3,7 +3,6 @@ import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { useSelector ,useDispatch } from 'react-redux';
 import { fetchDatamovie } from './fetchasync';
 import { moviefetchreset } from '../store/reducers/moviereducer';
-import { set } from 'mongoose';
 import { Horizontaldefault } from './horizontaldefault';
 import { Spinner } from './Spinner';
 const TrendingMovies = () => {
@@ -35,7 +34,6 @@ const TrendingMovies = () => {
     original_name,
     overview,
   } = data.details;
-    console.log(data);
 
   return (
 <div

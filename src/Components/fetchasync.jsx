@@ -20,7 +20,6 @@ export const fetchDatamovie =  (ID) => async (dispatch) => {
           videos : videos.data.results.find((item) => item.type === "Trailer"),
           watchprovider : watchprovider.data,
       };
-      console.log(allDetails);
       dispatch(moviefetch(allDetails));
     } catch (err) {
       console.error("Failed to fetch data:", err);

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { useSelector ,useDispatch } from 'react-redux';
-import { moviefetchreset } from '../store/reducers/moviereducer';
-import { Horizontaldefault } from './horizontaldefault';
 import { Spinner } from './Spinner';
 import { fetchasyncPeople } from './FetchasyncPeople';
 import { peoplefetchreset } from '../store/reducers/peoplereducer';
@@ -37,7 +35,6 @@ const Persondeatils = () => {
     original_name,
     overview,
   } = data.details;
-    console.log(data);
 
   return (
 <div

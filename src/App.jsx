@@ -36,14 +36,4 @@ function App() {
   </div>
   )
 }
-function MainLayout() {
-  return (
-    <div>
-      <hr />
-      <h1>My App Header</h1>
-      <Outlet /> {/* child route renders here */}
-    </div>
-  );
-}
-
 export default App

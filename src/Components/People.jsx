@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { Dropdown } from './dropdown';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import axios from 'axios';
 import { Spinner } from './Spinner';
 import axiosInstance from '../axios/axios';
-import { Topnav } from './Topnav';
 import { SearchTab } from './SearchTab';
 
 export const People = () => {
@@ -23,7 +20,6 @@ export const People = () => {
       });
   
       const results = response.data.results;
-      console.log(results);
   
       if (results && results.length > 0) {
         setPeople((prev) => [...prev, ...results]);

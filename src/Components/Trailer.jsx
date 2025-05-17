@@ -9,7 +9,6 @@ export const Trailer = () => {
     const [loading, setloading] = useState(true);
     const category = useLocation().pathname.split('/')[2];
     const data = useSelector((state) => state[category].info.videos);
-    console.log(data);
   return (
     <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black'>
        <i onClick={()=>(navigate(-1))} class="ri-close-line absolute top-10 left-10 text-3xl z-[10] cursor-pointer"></i>

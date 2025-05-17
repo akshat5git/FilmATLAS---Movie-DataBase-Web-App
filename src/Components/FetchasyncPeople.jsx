@@ -17,7 +17,6 @@ export const fetchasyncPeople =  (ID) => async (dispatch) => {
             tvcredit : tvcredit.data,
           images : images.data,
       };
-      console.log(allDetails);
       dispatch(peoplefetch(allDetails));
     } catch (err) {
       console.error("Failed to fetch data:", err);

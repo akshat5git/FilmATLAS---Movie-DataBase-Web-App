@@ -20,7 +20,6 @@ export const Topnav = ({menu,setmenu}) => {
         }
       });
       setSearch(response.data);
-      console.log(response.data);
       
     } catch (error) {
       console.error("Error fetching data:", error);

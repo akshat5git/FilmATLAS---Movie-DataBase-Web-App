@@ -48,13 +48,12 @@ const Home = () => {
           'content-type': 'application/json',
           Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNWI1ZGQ0M2VjNzgzMzBhMThiMmMxMTRkNTM0YTU1YSIsIm5iZiI6MTc0NTExNjI1Ni4zMDQ5OTk4LCJzdWIiOiI2ODA0NWM2MDZlMWE3NjllODFlZGZmODIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0._HFK5vHVQajcUbCkifTMQm8KbiI_ReaNk9QuuxeMRZQ'
         }});
-        console.log(response);
+
       const results = response.data.results;
 
   
       if (response && results.length > 0) {
         settrending(results); // ✅ Final result
-        //console.log("✅ Found:", results[randomIndex]);
         return;
       } else {
         console.log("❌Error: No results found.");
