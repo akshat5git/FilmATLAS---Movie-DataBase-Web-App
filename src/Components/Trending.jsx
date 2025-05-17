@@ -93,11 +93,11 @@ export const Trending = () =>  {
   className="w-[200px] h-[350px] bg-[#1F1E24] m-2 mb-[50px] rounded-lg cursor-pointer flex flex-col gap-4 overflow-hidden group"
 >
   <div className="relative overflow-hidden rounded-lg">
-    <img 
-      src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} 
+    {item.poster_path ? <img 
+      src={`https://image.tmdb.org/t/p/w500${item.poster_path || item.profile_path}`} 
       alt="" 
       className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
-    />
+    /> : <img src='https://dummyimage.com/500x750/555/fff.png&text=No+Image`'/>}
     
     {/* Gradient Overlay for Darkening on Hover */}
     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>

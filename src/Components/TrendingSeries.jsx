@@ -60,7 +60,7 @@ export const TrendingSeries = () => {
   };
 
   return (
-    <div className="text-white min-h-screen" style={backgroundStyle}>
+    <div className="text-white min-h-screen overflow-hidden transition-all duration-1000 ease-out" style={backgroundStyle}>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
 
       <div className="h-screen w-screen backdrop-blur-md relative overflow-y-auto">
